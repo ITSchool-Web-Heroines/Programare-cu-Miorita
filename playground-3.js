@@ -3,7 +3,7 @@
 // Programul trebuie să funcționeze indiferent de configurația stânei.
 
 let free = false;
-while (free != true) {
+while (!free) {
   if (canMove()) {
     free = true;
     while (canMove()) {
