@@ -2,11 +2,13 @@
 // Scrie un program care să o ajute pe Miorița să ajungă la pășune
 // Programul trebuie să funcționeze indiferent de configurația stânei.
 
-let j = 0;
-while (j != 1) {
+let free = false;
+while (free != true) {
   if (canMove()) {
-    j = 1;
-    move();
+    free = true;
+    while (canMove()) {
+      move();
+    }
   } else {
     turnRight();
   }
