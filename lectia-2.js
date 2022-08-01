@@ -5,9 +5,7 @@ if (canMove())
     move();
 }
 
-reset();
-
-if (!canMove())
+else
 {
     turnLeft();
     move();
@@ -16,3 +14,4 @@ if (!canMove())
     move();
     move();
 }
+
