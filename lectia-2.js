@@ -7,7 +7,7 @@ if (canMove())
 
 reset();
 
-if (!canmove())
+if (!canMove())
 {
     turnLeft();
     move();
