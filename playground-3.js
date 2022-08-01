@@ -1,3 +1,27 @@
-// https://miorita.scoalaweb.ro/playgrounds/escape
-// Scrie un program care să o ajute pe Miorița să ajungă la pășune
-// Programul trebuie să funcționeze indiferent de configurația stânei.
+reset();
+
+
+function turnAround()
+{
+    turnRight();
+    turnRight();
+}
+
+
+function superMove(times = 1)
+{
+    for (var i = 0; i < times; i = i+1){
+        move();
+    }
+}
+
+
+if (!canmove())
+{
+    turnAround();
+    superMove();
+    turnRight();
+    superMove(2);
+    turnLeft();
+    superMove(3);
+}
