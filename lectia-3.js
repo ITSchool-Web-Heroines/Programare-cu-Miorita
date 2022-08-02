@@ -52,14 +52,22 @@ turnRight();
 for(let i = 0; i < 1; i++) {
     move();
 } */
-// Varianta scurta
-reset();
+// Varianta scurta ca la curs
+/*reset();
 let list = [6, 6, 6, 5, 5, 4, 4, 3, 3, 2, 2, 1];
 for (let way = 0; way < list.length; way++) {
   for (let i = 0; i < list[way]; i++) {
     move();
   }
-
+  turnRight();
+}
+move();*/
+// Varianta 3
+reset();
+for (let way = 0; way < 12; way++) {
+  while (canMove()) {
+    move();
+  }
   turnRight();
 }
 move();

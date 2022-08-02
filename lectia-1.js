@@ -1,4 +1,3 @@
-// reset am pus ca sa porneasca mereu de la inceput.
 reset();
 turnRight();
 move();
