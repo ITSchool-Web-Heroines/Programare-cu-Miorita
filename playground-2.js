@@ -1,27 +1,13 @@
-function theHatchet() {
-  moveandPick();
-  deliverHatchet();
-}
-function moveandPick() {
-  move();
-  pick("hatchet");
-}
-function deliverHatchet() {
-  while (canMove()) {
-    move();
-  }
-  if (!canMove()) {
-    turnRight();
-  }
-  while (canMove()) {
-    move();
-  }
-  if (!canMove()) {
-    drop("hatchet");
-    turnRight();
-    move();
-  }
-}
 reset();
-moveandPick();
-deliverHatchet();
+move();
+pick("hatchet");
+for (let i = 0; i < 3; i++) {
+  move();
+}
+turnRight();
+for (let i = 0; i < 4; i++) {
+  move();
+}
+drop("hatchet");
+turnRight();
+move();
