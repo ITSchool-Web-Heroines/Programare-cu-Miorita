@@ -1,2 +1,13 @@
-// https://miorita.scoalaweb.ro/playgrounds/hatchet
-// Scrie un program care să o ajute pe Miorița să ridice baltagul și să îl aducă Vitoriei
+reset();
+move();
+pick("hatchet");
+for (let i = 0; i < 3; i++) {
+  move();
+}
+turnRight();
+for (let i = 0; i < 4; i++) {
+  move();
+}
+drop("hatchet");
+turnRight();
+move();
